@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -398,7 +399,9 @@ DIN A4, landscape with location and doc. field</description>
 <sheet>
 <plain>
 <text x="157.48" y="2.54" size="1.778" layer="94" font="vector">Esteban Martin Gimenez</text>
-<text x="132.08" y="-12.7" size="1.778" layer="94" font="vector">FabKids rev0.2</text>
+<text x="167.64" y="-25.4" size="1.778" layer="94" font="vector">Under Licence 
+CERN OHL version 1.2.
+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-60.96" y="-17.78"/>
@@ -517,4 +520,10 @@ DIN A4, landscape with location and doc. field</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

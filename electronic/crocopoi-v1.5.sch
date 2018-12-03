@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1827,7 +1827,9 @@ SMD type&lt;br&gt;</description>
 <sheet>
 <plain>
 <text x="157.48" y="2.54" size="1.778" layer="94" font="vector">Esteban Martin Gimenez</text>
-<text x="132.08" y="-12.7" size="1.778" layer="94" font="vector">FabKids rev0.2</text>
+<text x="165.1" y="-25.4" size="1.778" layer="94" font="vector">Under Licence 
+CERN OHL version 1.2.
+</text>
 <text x="134.62" y="147.32" size="1.778" layer="91">v0.2</text>
 </plain>
 <instances>
@@ -2237,6 +2239,10 @@ SMD type&lt;br&gt;</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
